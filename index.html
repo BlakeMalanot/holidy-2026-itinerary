@@ -251,6 +251,83 @@
         display: block;
       }
 
+      .table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 25px 0;
+      }
+      .table-container table {
+        margin: 0;
+      }
+
+      /* Mobile Specific Responsive Layout */
+      @media (max-width: 768px) {
+        .container {
+          margin: 10px;
+          padding: 20px;
+          border: 1px solid var(--border-color);
+          border-radius: 4px;
+          box-shadow: none;
+        }
+
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+
+        .header-left h1 {
+          font-size: 1.8em;
+        }
+
+        .header-left p {
+          font-size: 0.95em;
+        }
+
+        .status-badge {
+          align-self: flex-start;
+        }
+
+        h2 {
+          font-size: 1.25em;
+          margin-top: 35px;
+        }
+
+        .destination-card {
+          padding: 20px;
+        }
+
+        .day-item {
+          flex-direction: column;
+          margin-bottom: 15px;
+        }
+
+        .day-num {
+          margin-bottom: 4px;
+        }
+
+        .cost-summary {
+          flex-direction: column;
+          align-items: stretch;
+          padding: 20px;
+        }
+
+        .total-block {
+          margin-left: 0;
+          margin-top: 25px;
+          text-align: center;
+        }
+
+        .total-amount {
+          font-size: 2.2em;
+        }
+
+        .map-container iframe {
+          height: 350px;
+        }
+      }
+
       /* Print Specific Logic */
       @page {
         size: A4;
@@ -324,113 +401,115 @@
         successfully avoid the peak monsoon and flooding risks in the central
         provinces, securing a sunny, relaxing resort holiday.
       </div>
-
       <section>
         <h2>1. Flights</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Flight Route</th>
-              <th>Carrier</th>
-              <th>Schedule / Type</th>
-              <th>Price / Person</th>
-              <th>Total (2 People)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Oct 9, 2026</td>
-              <td>SYD &rarr; HND (Tokyo)</td>
-              <td><strong>Virgin</strong></td>
-              <td>VA 7402 (12:45 – 20:35) Boeing 787-9 (Direct)</td>
-              <td>$1,685.28</td>
-              <td>$3,370.56</td>
-            </tr>
-            <tr>
-              <td>Oct 18, 2026</td>
-              <td>KIX (Osaka) &rarr; SGN &rarr; PQC</td>
-              <td><strong>Vietnam Airlines</strong></td>
-              <td>1 Stop (VN321 &amp; VN1825 via Ho Chi Minh City)</td>
-              <td>$390.00</td>
-              <td>$780.00</td>
-            </tr>
-            <tr>
-              <td>Oct 28, 2026</td>
-              <td>PQC &rarr; SGN &rarr; SYD</td>
-              <td><strong>Vietnam Airlines</strong></td>
-              <td>1 Stop (VN1828 &amp; VN773 via Ho Chi Minh City)</td>
-              <td>$760.00</td>
-              <td>$1,520.00</td>
-            </tr>
-            <tr style="font-weight: bold; background-color: var(--bg-body)">
-              <td colspan="4">Total Flights</td>
-              <td>$2,835.28</td>
-              <td>$5,670.56</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Flight Route</th>
+                <th>Carrier</th>
+                <th>Schedule / Type</th>
+                <th>Price / Person</th>
+                <th>Total (2 People)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Oct 9, 2026</td>
+                <td>SYD &rarr; HND (Tokyo)</td>
+                <td><strong>JAL / ANA / Qantas</strong></td>
+                <td>VA 7402 (12:45 – 20:35) Boeing 787-9 (Direct)</td>
+                <td>$1,685.28</td>
+                <td>$3,370.56</td>
+              </tr>
+              <tr>
+                <td>Oct 18, 2026</td>
+                <td>KIX (Osaka) &rarr; SGN &rarr; PQC</td>
+                <td><strong>Vietnam Airlines</strong></td>
+                <td>1 Stop (VN321 &amp; VN1825 via Ho Chi Minh City)</td>
+                <td>$390.00</td>
+                <td>$780.00</td>
+              </tr>
+              <tr>
+                <td>Oct 28, 2026</td>
+                <td>PQC &rarr; SGN &rarr; SYD</td>
+                <td><strong>Vietnam Airlines</strong></td>
+                <td>1 Stop (VN1828 &amp; VN773 via Ho Chi Minh City)</td>
+                <td>$760.00</td>
+                <td>$1,520.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: var(--bg-body)">
+                <td colspan="4">Total Flights</td>
+                <td>$2,835.28</td>
+                <td>$5,670.56</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
-
       <section>
         <h2>2. Accommodation</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>City</th>
-              <th>Accommodation Name</th>
-              <th>Arrive</th>
-              <th>Leave</th>
-              <th>Nights</th>
-              <th>Price / Night (Room)</th>
-              <th>Total Price (2 People)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tokyo</td>
-              <td><strong>Shinjuku Prince Hotel</strong></td>
-              <td>Oct 9</td>
-              <td>Oct 12</td>
-              <td>3</td>
-              <td>$351.32</td>
-              <td>$1,053.96</td>
-            </tr>
-            <tr>
-              <td>Kyoto</td>
-              <td><strong>Kyoto Granbell Hotel</strong></td>
-              <td>Oct 12</td>
-              <td>Oct 15</td>
-              <td>3</td>
-              <td>$369.00</td>
-              <td>$1,107.00</td>
-            </tr>
-            <tr>
-              <td>Osaka</td>
-              <td><strong>Cross Hotel Osaka</strong></td>
-              <td>Oct 15</td>
-              <td>Oct 18</td>
-              <td>3</td>
-              <td>$306.33</td>
-              <td>$919.00</td>
-            </tr>
-            <tr>
-              <td>Phu Quoc</td>
-              <td><strong>Pullman</strong></td>
-              <td>Oct 18</td>
-              <td>Oct 27</td>
-              <td>9</td>
-              <td>$474.64</td>
-              <td>$4,271.76</td>
-            </tr>
-            <tr style="font-weight: bold; background-color: var(--bg-body)">
-              <td colspan="4">Total Accommodation</td>
-              <td>18</td>
-              <td>—</td>
-              <td>$7,351.72</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>City</th>
+                <th>Accommodation Name</th>
+                <th>Arrive</th>
+                <th>Leave</th>
+                <th>Nights</th>
+                <th>Price / Night (Room)</th>
+                <th>Total Price (2 People)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tokyo</td>
+                <td><strong>Shinjuku Prince Hotel</strong></td>
+                <td>Oct 9</td>
+                <td>Oct 12</td>
+                <td>3</td>
+                <td>$245.00</td>
+                <td>$735.00</td>
+              </tr>
+              <tr>
+                <td>Kyoto</td>
+                <td><strong>Kyoto Granbell Hotel</strong></td>
+                <td>Oct 12</td>
+                <td>Oct 15</td>
+                <td>3</td>
+                <td>$310.00</td>
+                <td>$930.00</td>
+              </tr>
+              <tr>
+                <td>Osaka</td>
+                <td><strong>Cross Hotel Osaka</strong></td>
+                <td>Oct 15</td>
+                <td>Oct 18</td>
+                <td>3</td>
+                <td>$265.00</td>
+                <td>$795.00</td>
+              </tr>
+              <tr>
+                <td>Phu Quoc</td>
+                <td><strong>Pullman</strong></td>
+                <td>Oct 18</td>
+                <td>Oct 27</td>
+                <td>9</td>
+                <td>$474.64</td>
+                <td>$4,271.76</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: var(--bg-body)">
+                <td colspan="4">Total Accommodation</td>
+                <td>18</td>
+                <td>—</td>
+                <td>$6,731.76</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section>
