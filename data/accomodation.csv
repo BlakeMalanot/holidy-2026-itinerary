@@ -1,5 +1,5 @@
 id,city,name,arrive,leave,nights,price_per_night,total_price,selected
-1,Tokyo,Shinjuku Prince Hotel,9/10/2026,12/10/2026,3,245,735,TRUE
-2,Kyoto,Kyoto Granbell Hotel,12/10/2026,15/10/2026,3,310,930,TRUE
-3,Osaka,Cross Hotel Osaka,15/10/2026,18/10/2026,3,265,795,TRUE
-4,Phu Quoc,Pullman,18/10/2026,27/10/2026,9,474.64,4271.76,TRUE
+1,Tokyo,Shinjuku Prince Hotel,10/10/2026,14/10/2026,4,250,1000,TRUE
+2,Kyoto,Kyoto Granbell Hotel,14/10/2026,18/10/2026,4,310,1240,TRUE
+3,Osaka,Cross Hotel Osaka,18/10/2026,21/10/2026,3,265,795,TRUE
+4,Tokyo,Shinjuku Prince Hotel,21/10/2026,23/10/2026,2,250,500,TRUE

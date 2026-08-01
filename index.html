@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Japan & Phu Quoc Island October 2026 Travel Itinerary</title>
+    <title>Japan Autumn 2026 Travel Itinerary</title>
     <style>
       :root {
         --primary-blue: #004a99;
@@ -137,9 +137,33 @@
       }
 
       td {
-        padding: 15px;
+        padding: 12px 15px;
         border-bottom: 1px solid var(--border-color);
-        font-size: 0.95em;
+        font-size: 0.93em;
+        vertical-align: top;
+      }
+
+      td.time-cell {
+        background-color: var(--light-blue);
+        font-weight: 700;
+        color: var(--primary-blue);
+        border-right: 2px solid var(--primary-blue);
+        white-space: nowrap;
+        vertical-align: top;
+      }
+
+      .day-subsection {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        break-inside: avoid;
+      }
+
+      .day-subsection h3 {
+        color: var(--primary-blue);
+        border-bottom: 2px solid var(--secondary-blue);
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+        font-size: 1.15em;
       }
 
       .destination-card {
@@ -152,30 +176,6 @@
 
       .destination-card:hover {
         border-color: var(--secondary-blue);
-      }
-
-      .day-list {
-        margin-top: 15px;
-        padding-left: 0;
-        list-style: none;
-      }
-
-      .day-item {
-        margin-bottom: 12px;
-        color: var(--text-main);
-        display: flex;
-        align-items: flex-start;
-      }
-
-      .day-num {
-        font-weight: 700;
-        color: var(--secondary-blue);
-        min-width: 85px;
-        flex-shrink: 0;
-      }
-
-      .day-desc {
-        color: var(--text-secondary);
       }
 
       .cost-summary {
@@ -298,15 +298,6 @@
           padding: 20px;
         }
 
-        .day-item {
-          flex-direction: column;
-          margin-bottom: 15px;
-        }
-
-        .day-num {
-          margin-bottom: 4px;
-        }
-
         .cost-summary {
           flex-direction: column;
           align-items: stretch;
@@ -369,29 +360,16 @@
         h2 {
           margin-top: 30px;
         }
-        /* Visual fix for tables in print */
         th {
           background: #f8f9fa !important;
           -webkit-print-color-adjust: exact;
         }
       }
 
-      /* Only affects the specific container with this ID */
-      #flight-map-custom {
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        position: relative;
-      }
-
-      #flight-map-custom iframe {
-        /* Scale and shift only this iframe */
-        width: calc(100% + 320px);
-        height: calc(100% + 180px);
-        position: absolute;
-        bottom: -180px;
-        left: -320px;
-        border: none;
+      @media (max-width: 600px) {
+        #flight-map-custom iframe {
+          transform: translate(-50px, -50px) scale(0.8);
+        }
       }
     </style>
   </head>
@@ -399,25 +377,24 @@
     <div class="container">
       <header>
         <div class="header-left">
-          <h1>JAPAN & PHU QUOC ISLAND ITINERARY</h1>
+          <h1>JAPAN TRAVEL ITINERARY</h1>
           <p>
-            Sydney (SYD) &mdash; Japan (10 Days) | Phu Quoc Island (10 Days)
-            &mdash; October 2026
+            Sydney (SYD) &mdash; Tokyo / Kyoto / Osaka (14 Days) &mdash; October
+            10&ndash;23, 2026
           </p>
         </div>
-        <div class="status-badge">Proposed Route</div>
+        <div class="status-badge">Direct Route Confirmed</div>
       </header>
 
       <div class="tip-box">
         <div class="tip-title">
-          ☀️ Seasonal Weather Advantage (Phu Quoc Island)
+          🍁 Seasonal Weather Advantage (October in Japan)
         </div>
-        October marks the end of the rainy season in Phu Quoc. You can expect
-        warm, tropical weather (25&ndash;30&deg;C) with rapidly declining
-        rainfall and clearing skies, making it an ideal beach destination. By
-        substituting Central Vietnam (Da Nang/Hoi An) with Phu Quoc, you
-        successfully avoid the peak monsoon and flooding risks in the central
-        provinces, securing a sunny, relaxing resort holiday.
+        October brings ideal autumn traveling conditions across Honshu, Japan.
+        Expect crisp, pleasant daytime temperatures (15&ndash;22&deg;C) with low
+        humidity and minimal rainfall, making it perfect for walking tours,
+        temple gardens, and vibrant street food exploration. Clear skies also
+        provide optimal viewing conditions for Mount Fuji.
       </div>
       <section>
         <h2>1. Flights</h2>
@@ -435,33 +412,25 @@
             </thead>
             <tbody>
               <tr>
-                <td>Oct 9, 2026</td>
-                <td>SYD → BNE → NRT</td>
-                <td><strong>Virgin / Jetstar</strong></td>
-                <td>1 Stop (via Brisbane)</td>
-                <td>$1,685.28</td>
-                <td>$3,370.56</td>
+                <td>Oct 10, 2026</td>
+                <td>SYD &rarr; HND</td>
+                <td><strong>Virgin</strong></td>
+                <td>Direct (0 Stops, 12:45 &ndash; 20:35)</td>
+                <td>$2,036.36</td>
+                <td>$4,072.72</td>
               </tr>
               <tr>
-                <td>Oct 18, 2026</td>
-                <td>KIX → HAN → PQC</td>
-                <td><strong>VietJet Air</strong></td>
-                <td>1 Stop (via Hanoi)</td>
-                <td>$390.00</td>
-                <td>$780.00</td>
-              </tr>
-              <tr>
-                <td>Oct 27-28, 2026</td>
-                <td>PQC → SGN → SYD</td>
-                <td><strong>VietJet Air</strong></td>
-                <td>1 Stop (via Ho Chi Minh City)</td>
-                <td>$760.00</td>
-                <td>$1,520.00</td>
+                <td>Oct 23, 2026</td>
+                <td>HND &rarr; SYD</td>
+                <td><strong>Virgin</strong></td>
+                <td>Direct (0 Stops, 8:30 &ndash; 20:10)</td>
+                <td>Included</td>
+                <td>Included</td>
               </tr>
               <tr style="font-weight: bold; background-color: var(--bg-body)">
-                <td colspan="4">Total Flights</td>
-                <td>$2,835.28</td>
-                <td>$5,670.56</td>
+                <td colspan="4">Total Flights (Return Direct Fares)</td>
+                <td>$2,036.36</td>
+                <td>$4,072.72</td>
               </tr>
             </tbody>
           </table>
@@ -484,46 +453,46 @@
             </thead>
             <tbody>
               <tr>
-                <td>Tokyo</td>
+                <td>Tokyo (Leg 1)</td>
                 <td><strong>Shinjuku Prince Hotel</strong></td>
-                <td>Oct 9</td>
-                <td>Oct 12</td>
-                <td>3</td>
-                <td>$245.00</td>
-                <td>$735.00</td>
+                <td>Oct 10</td>
+                <td>Oct 14</td>
+                <td>4</td>
+                <td>$250.00</td>
+                <td>$1,000.00</td>
               </tr>
               <tr>
                 <td>Kyoto</td>
                 <td><strong>Kyoto Granbell Hotel</strong></td>
-                <td>Oct 12</td>
-                <td>Oct 15</td>
-                <td>3</td>
+                <td>Oct 14</td>
+                <td>Oct 18</td>
+                <td>4</td>
                 <td>$310.00</td>
-                <td>$930.00</td>
+                <td>$1,240.00</td>
               </tr>
               <tr>
                 <td>Osaka</td>
                 <td><strong>Cross Hotel Osaka</strong></td>
-                <td>Oct 15</td>
                 <td>Oct 18</td>
+                <td>Oct 21</td>
                 <td>3</td>
                 <td>$265.00</td>
                 <td>$795.00</td>
               </tr>
               <tr>
-                <td>Phu Quoc</td>
-                <td><strong>Pullman</strong></td>
-                <td>Oct 18</td>
-                <td>Oct 27</td>
-                <td>9</td>
-                <td>$474.64</td>
-                <td>$4,271.76</td>
+                <td>Tokyo (Leg 2)</td>
+                <td><strong>Shinjuku Prince Hotel</strong></td>
+                <td>Oct 21</td>
+                <td>Oct 23</td>
+                <td>2</td>
+                <td>$250.00</td>
+                <td>$500.00</td>
               </tr>
               <tr style="font-weight: bold; background-color: var(--bg-body)">
                 <td colspan="4">Total Accommodation</td>
-                <td>18</td>
+                <td>13</td>
                 <td>—</td>
-                <td>$6,731.76</td>
+                <td>$3,535.00</td>
               </tr>
             </tbody>
           </table>
@@ -534,167 +503,1413 @@
         <h2>3. Destination Summary</h2>
 
         <div class="destination-card">
-          <h3>Leg 1: Japan | 9 Nights</h3>
-          <p><strong>Period:</strong> Oct 9 &ndash; Oct 18</p>
+          <h3>Japan Itinerary Overview | 13 Nights</h3>
+          <p><strong>Period:</strong> Oct 10 &ndash; Oct 23, 2026</p>
           <p>
-            <strong>Highlights:</strong> Tokyo (Modern landmarks), Kyoto
-            (Historic temples), & Osaka (Samurai castle & culinary scene)
+            <strong>Highlights:</strong> Tokyo (Modern metropolises &amp;
+            pop-culture subcultures), Kyoto (Historic temples &amp; Zen
+            gardens), &amp; Osaka (Samurai castle &amp; culinary street food)
           </p>
-
-          <ul class="day-list">
-            <li class="day-item">
-              <span class="day-num">Day 1 (Oct 9)</span>
-              <span class="day-desc"
-                >Arrive Tokyo Haneda (HND) in evening, transfer to Shinjuku
-                Prince Hotel.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 2 (Oct 10)</span>
-              <span class="day-desc"
-                >Explore Shibuya Crossing, Shibuya Sky, Meiji Jingu Shrine,
-                Harajuku, and dinner at Omoide Yokocho.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 3 (Oct 11)</span>
-              <span class="day-desc"
-                >Visit Senso-ji Temple in Asakusa, teamLab Planets in Toyosu,
-                and sunset waterfront walk in Odaiba.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 4 (Oct 12)</span>
-              <span class="day-desc"
-                >Shinkansen (Bullet Train) to Kyoto, check in to Kyoto Granbell
-                Hotel, and walk the lantern-lit lanes of Gion.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 5 (Oct 13)</span>
-              <span class="day-desc"
-                >Beat the crowds at Arashiyama Bamboo Grove and Tenryu-ji
-                Temple, followed by Golden Pavilion (Kinkaku-ji).</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 6 (Oct 14)</span>
-              <span class="day-desc"
-                >Hike Fushimi Inari Shrine (vermilion torii gates) and take an
-                afternoon trip to Nara Park (deer and Todai-ji).</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 7 (Oct 15)</span>
-              <span class="day-desc"
-                >Train to Osaka, check in to Cross Hotel Osaka, visit Osaka
-                Castle and eat street food in Dotonbori.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 8 (Oct 16)</span>
-              <span class="day-desc"
-                >Day trip to the historic Himeji Castle via Shinkansen OR spend
-                the day at Universal Studios Japan.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 9 (Oct 17)</span>
-              <span class="day-desc"
-                >Browse retro Shinsekai, shop in Shinsaibashi, and enjoy night
-                views from Umeda Sky Building.</span
-              >
-            </li>
-          </ul>
         </div>
 
-        <div class="destination-card">
-          <h3>Leg 2: Vietnam | 9 Nights</h3>
-          <p><strong>Period:</strong> Oct 18 &ndash; Oct 28</p>
-          <p>
-            <strong>Base:</strong> Phu Quoc Island Beach Resort (e.g., La
-            Veranda Resort Phu Quoc - MGallery / Salinda Resort)
-          </p>
+        <!-- Day 1 -->
+        <div class="day-subsection">
+          <h3>
+            Day 1: Oct 10, 2026 (Sat) &mdash; Sydney to Tokyo Direct Flight
+            &amp; Arrival
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(09:00 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Direct Qantas / ANA Flight QF 59 (SYD 10:55 &rarr;
+                    HND 19:00) departure from Sydney T1.
+                  </td>
+                  <td>SYD Airport</td>
+                  <td>Included in Airfare</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Pre-flight lounge access &amp; international
+                    transit check-in at Sydney T1.
+                  </td>
+                  <td>SYD Airport</td>
+                  <td>$50 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 18:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Daylight direct flight across the Pacific with
+                    inflight meals &amp; Japanese movie marathon.
+                  </td>
+                  <td>In-Flight</td>
+                  <td>Included in Airfare</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Daylight flight work &amp; relaxation with window
+                    views approaching Japan coastline.
+                  </td>
+                  <td>In-Flight</td>
+                  <td>Included in Airfare</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(18:30 &ndash; 21:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Express Limousine Bus to Shinjuku &amp; dinner at
+                    Omoide Yokocho izakayas.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$35 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Haneda Monorail to hotel &amp; late-night Ichiran
+                    Ramen.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$20 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-          <ul class="day-list">
-            <li class="day-item">
-              <span class="day-num">Day 10 (Oct 18)</span>
-              <span class="day-desc"
-                >Flight KIX &rarr; SGN &rarr; PQC. Transfer to luxury beach
-                resort, watch first tropical sunset on Long Beach.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 11 (Oct 19)</span>
-              <span class="day-desc"
-                >Resort decompression: beachfront breakfast, infinity pool
-                lounging, and premium spa treatments.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 12 (Oct 20)</span>
-              <span class="day-desc"
-                >Island economy tour: visit traditional fish sauce factory (Nước
-                Mắm), pepper farm, and taste Sim wine.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 13 (Oct 21)</span>
-              <span class="day-desc"
-                >Day trip to the gorgeous Sao Beach (Bãi Sao) for powdery white
-                sand, swimming, and beachside fresh seafood.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 14 (Oct 22)</span>
-              <span class="day-desc"
-                >Take the record-breaking Hon Thom Oversea Cable Car to
-                Pineapple Island and Sun World Nature Park.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 15 (Oct 23)</span>
-              <span class="day-desc"
-                >At leisure: enjoy stand-up paddleboarding, kayaking, or reading
-                under a palm tree.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 16 (Oct 24)</span>
-              <span class="day-desc"
-                >Explore Ham Ninh Fishing Village on the east coast for local
-                flower crabs, and hike to Tranh Stream waterfall.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 17 (Oct 25)</span>
-              <span class="day-desc"
-                >Historical &amp; cultural sights: visit Coconut Tree Prison
-                museum and the coastal Ho Quoc Zen Pagoda.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 18 (Oct 26)</span>
-              <span class="day-desc"
-                >Walk Mediterranean-style Sunset Town, view Kiss Bridge, and
-                explore Duong Dong Night Market.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 19 (Oct 27)</span>
-              <span class="day-desc"
-                >Final day of indulgence: beachside walks, sunset swim, and
-                beachfront farewell dinner.</span
-              >
-            </li>
-            <li class="day-item">
-              <span class="day-num">Day 20 (Oct 28)</span>
-              <span class="day-desc"
-                >Packing and leisure. Mid-afternoon check-out and transfer to
-                airport for overnight connection to Sydney via SGN.</span
-              >
-            </li>
-          </ul>
+        <!-- Day 2 -->
+        <div class="day-subsection">
+          <h3>
+            Day 2: Oct 11, 2026 (Sun) &mdash; Shibuya Scramble &amp; Harajuku
+            Culture
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:30 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Walk the iconic Shibuya Crossing &amp; reserve
+                    Shibuya Sky outdoor observation deck.
+                  </td>
+                  <td>Shibuya, Tokyo</td>
+                  <td>~$22 AUD (¥2,200)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Early morning walk through serene forested trails
+                    of Meiji Jingu Shrine.
+                  </td>
+                  <td>Harajuku, Tokyo</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Browse Takeshita Street pop-culture shops &amp;
+                    lunch at Harajuku Gyukatsu.
+                  </td>
+                  <td>Harajuku, Tokyo</td>
+                  <td>~$25 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Stroll high-end architectural avenue of Omotesando
+                    &amp; coffee at Caf&eacute; de l'Ambre.
+                  </td>
+                  <td>Omotesando, Tokyo</td>
+                  <td>~$15 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Panoramic sunset views from Tokyo Metropolitan
+                    Government Building &amp; Golden Gai bar hop.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$40 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Kabukicho red-torii alleyways exploration &amp;
+                    Wagyu Yakiniku dinner.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$65 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-subsection">
+          <h3>
+            Day 3: Oct 12, 2026 (Mon) &mdash; Historic Asakusa &amp; Digital Art
+            Toyosu
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:30 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Visit Senso-ji Temple &amp; sample Nakamise
+                    Shopping Street street food (Ningyo-yaki, dango).
+                  </td>
+                  <td>Asakusa, Tokyo</td>
+                  <td>~$15 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Take a scenic Sumida River water bus cruise from
+                    Asakusa to Hamarikyu Gardens.
+                  </td>
+                  <td>Sumida River, Tokyo</td>
+                  <td>~$12 AUD (¥1,200)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Immersive barefoot digital art exhibition at
+                    teamLab Planets Toyosu.
+                  </td>
+                  <td>Toyosu, Tokyo</td>
+                  <td>~$38 AUD (¥3,800)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Explore Odaiba Seaside Park, Gundam Base statue
+                    &amp; Rainbow Bridge view.
+                  </td>
+                  <td>Odaiba, Tokyo</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Sushi dinner in Ginza (Kyubey or Sukiyabashi-style
+                    casual counter) &amp; depachika.
+                  </td>
+                  <td>Ginza, Tokyo</td>
+                  <td>~$70 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Tokyo Skytree Tembo Deck night view &amp;
+                    Solamachi shopping center dinner.
+                  </td>
+                  <td>Oshiage, Tokyo</td>
+                  <td>~$30 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-subsection">
+          <h3>
+            Day 4: Oct 13, 2026 (Tue) &mdash; Tsukiji Gourmet Market &amp;
+            Imperial Gardens
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:00 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Tsukiji Outer Market food tour: fresh sea urchin,
+                    tamagoyaki, grilled oysters &amp; Wagyu skewers.
+                  </td>
+                  <td>Tsukiji, Tokyo</td>
+                  <td>~$35 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Toyosu Wholesale Fish Market viewing gallery &amp;
+                    early omakase sushi breakfast.
+                  </td>
+                  <td>Toyosu, Tokyo</td>
+                  <td>~$50 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Walk Edo Castle ruins &amp; stone bridges of
+                    Imperial Palace East Gardens.
+                  </td>
+                  <td>Marunouchi, Tokyo</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Mori Art Museum exhibition &amp; Tokyo Tower view
+                    deck at Roppongi Hills.
+                  </td>
+                  <td>Roppongi, Tokyo</td>
+                  <td>~$20 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Akihabara neon exploration, retro gaming arcades
+                    (GiGO) &amp; anime culture.
+                  </td>
+                  <td>Akihabara, Tokyo</td>
+                  <td>~$25 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Ebisu Yokocho retro dining alleyway for grilled
+                    yakitori &amp; craft beer.
+                  </td>
+                  <td>Ebisu, Tokyo</td>
+                  <td>~$40 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-subsection">
+          <h3>
+            Day 5: Oct 14, 2026 (Wed) &mdash; Shinkansen Bullet Train to Kyoto
+            &amp; Gion District
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:30 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Tokaido Shinkansen (Nozomi) from Tokyo Station to
+                    Kyoto Station (2h 15m) with Ekiben.
+                  </td>
+                  <td>Tokyo &rarr; Kyoto</td>
+                  <td>~$140 AUD (¥14,000)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Deluxe Green Car Shinkansen seat with views of Mt.
+                    Fuji from seat D/E.
+                  </td>
+                  <td>In-Transit</td>
+                  <td>~$190 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Check in to Kyoto Granbell Hotel (Gion) &amp; walk
+                    along Shirakawa Canal.
+                  </td>
+                  <td>Gion, Kyoto</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Visit Kennin-ji Temple (Kyoto's oldest Zen temple)
+                    &amp; twin dragons ceiling painting.
+                  </td>
+                  <td>Higashiyama, Kyoto</td>
+                  <td>~$6 AUD (¥600)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Stroll lantern-lit Hanami-koji Street in Gion
+                    &amp; Pontocho Alley riverside dinner.
+                  </td>
+                  <td>Pontocho, Kyoto</td>
+                  <td>~$50 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Traditional Kyoto Kaiseki multi-course seasonal
+                    autumn dinner.
+                  </td>
+                  <td>Gion, Kyoto</td>
+                  <td>~$85 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-subsection">
+          <h3>
+            Day 6: Oct 15, 2026 (Thu) &mdash; Arashiyama Bamboo Grove &amp;
+            Golden Pavilion
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(07:30 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Early morning walk through Arashiyama Bamboo Grove
+                    &amp; Tenryu-ji Zen garden.
+                  </td>
+                  <td>Arashiyama, Kyoto</td>
+                  <td>~$5 AUD (¥500)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Sagano Romantic Railway open-air train ride along
+                    Hozugawa River gorge.
+                  </td>
+                  <td>Arashiyama, Kyoto</td>
+                  <td>~$9 AUD (¥880)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Kinkaku-ji (Golden Pavilion) glittering over
+                    Mirror Pond.
+                  </td>
+                  <td>Kita-ku, Kyoto</td>
+                  <td>~$5 AUD (¥500)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Ryoan-ji world-famous 15-rock Zen dry landscape
+                    garden.
+                  </td>
+                  <td>Kita-ku, Kyoto</td>
+                  <td>~$6 AUD (¥600)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Nishiki Market ("Kyoto's Kitchen") evening
+                    tasting: matcha ice cream, conger eel, donuts.
+                  </td>
+                  <td>Central Kyoto</td>
+                  <td>~$25 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Traditional Japanese tea ceremony &amp; Uji matcha
+                    tasting experience.
+                  </td>
+                  <td>Gion, Kyoto</td>
+                  <td>~$30 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="day-subsection">
+          <h3>
+            Day 7: Oct 16, 2026 (Fri) &mdash; Fushimi Inari Shrine &amp;
+            Kiyomizu-dera
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(07:00 &ndash; 11:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Early morning hike through thousands of vermilion
+                    torii gates to Mount Inari summit.
+                  </td>
+                  <td>Fushimi, Kyoto</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Explore lower shrine grounds, fox statues &amp;
+                    sample street food (Inari sushi, dango).
+                  </td>
+                  <td>Fushimi, Kyoto</td>
+                  <td>~$10 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(11:30 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Walk wooden stage of Kiyomizu-dera &amp; stroll
+                    Ninenzaka &amp; Sannenzaka preserved lanes.
+                  </td>
+                  <td>Higashiyama, Kyoto</td>
+                  <td>~$4 AUD (¥400)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Rent traditional Kimono for historic hillside
+                    photo walk through Kodai-ji Temple.
+                  </td>
+                  <td>Higashiyama, Kyoto</td>
+                  <td>~$40 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Sunset photo walk at Yasaka Pagoda (Hokan-ji)
+                    &amp; Gion izakaya dinner.
+                  </td>
+                  <td>Higashiyama, Kyoto</td>
+                  <td>~$35 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Shijo-Dori shopping arcade walk &amp; Kyoto-style
+                    tonkatsu dinner at Katsukura.
+                  </td>
+                  <td>Downtown Kyoto</td>
+                  <td>~$22 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="day-subsection">
+          <h3>
+            Day 8: Oct 17, 2026 (Sat) &mdash; Day Excursion to Nara Deer Park
+            &amp; Todai-ji
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:30 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Kintetsu Limited Express train to Nara (35m) &amp;
+                    interact with friendly free-roaming sacred deer.
+                  </td>
+                  <td>Nara Park, Nara</td>
+                  <td>~$8 AUD train + ~$2 crackers</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Walk through Isuien Traditional Japanese Garden
+                    &amp; Neiraku Museum.
+                  </td>
+                  <td>Nara</td>
+                  <td>~$12 AUD (¥1,200)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 16:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Todai-ji Temple Great Buddha Hall (world's largest
+                    wooden building).
+                  </td>
+                  <td>Nara Park, Nara</td>
+                  <td>~$6 AUD (¥600)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Hike stone lantern pathway through ancient forest
+                    to Kasuga Taisha Shrine.
+                  </td>
+                  <td>Nara</td>
+                  <td>~$5 AUD (¥500)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(16:30 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Return to Kyoto for traditional Obanzai (Kyoto
+                    home-style small plates) dinner.
+                  </td>
+                  <td>Sanjo, Kyoto</td>
+                  <td>~$35 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Kyoto craft beer tasting flight at Spring Valley
+                    Brewery Kyoto (machiya venue).
+                  </td>
+                  <td>Central Kyoto</td>
+                  <td>~$30 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="day-subsection">
+          <h3>
+            Day 9: Oct 18, 2026 (Sun) &mdash; Osaka Arrival &amp; Dotonbori
+            Street Food Crawl
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(09:00 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: 30-minute Special Rapid train from Kyoto to Osaka
+                    Station; check in to Cross Hotel Osaka.
+                  </td>
+                  <td>Kyoto &rarr; Osaka</td>
+                  <td>~$6 AUD (¥580)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Private luggage transfer &amp; coffee at Grand
+                    Front Osaka architectural complex.
+                  </td>
+                  <td>Umeda, Osaka</td>
+                  <td>~$15 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Tour historic Osaka Castle Keep museum &amp; walk
+                    surrounding castle moat gardens.
+                  </td>
+                  <td>Osaka Castle Park</td>
+                  <td>~$6 AUD (¥600)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Kuromon Ichiba Market seafood feast: grilled King
+                    Crab legs, Wagyu skewers, toro sushi.
+                  </td>
+                  <td>Namba, Osaka</td>
+                  <td>~$45 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Dotonbori canal cruise under Glico Running Man
+                    sign &amp; Takoyaki tasting (Kukuru).
+                  </td>
+                  <td>Dotonbori, Osaka</td>
+                  <td>~$20 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Okonomiyaki street dining at Mizuno or Chibo &amp;
+                    Shinsaibashi shopping street walk.
+                  </td>
+                  <td>Dotonbori, Osaka</td>
+                  <td>~$25 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="day-subsection">
+          <h3>
+            Day 10: Oct 19, 2026 (Mon) &mdash; Retro Shinsekai &amp; Umeda Sky
+            Views
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(09:00 &ndash; 12:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Explore Showa-retro Shinsekai district &amp;
+                    photograph Tsutenkaku Tower.
+                  </td>
+                  <td>Shinsekai, Osaka</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Visit Shitennoji Temple (Japan's first officially
+                    administered Buddhist temple).
+                  </td>
+                  <td>Tennoji, Osaka</td>
+                  <td>~$4 AUD (¥400)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:00 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Deep-fried skewer Kushikatsu lunch at Daruma
+                    Shinsekai &amp; Janjan Yokocho alley.
+                  </td>
+                  <td>Shinsekai, Osaka</td>
+                  <td>~$20 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Vintage shopping in America-mura (Amemura) &amp;
+                    coffee at Lilo Coffee Roasters.
+                  </td>
+                  <td>Shinsaibashi, Osaka</td>
+                  <td>~$15 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: 360-degree open-air rooftop views from Umeda Sky
+                    Building Kuchu Teien Observatory.
+                  </td>
+                  <td>Umeda, Osaka</td>
+                  <td>~$15 AUD (¥1,500)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Dinner in Takimi-koji retro underground dining
+                    street beneath Umeda Sky Building.
+                  </td>
+                  <td>Umeda, Osaka</td>
+                  <td>~$25 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 11 -->
+        <div class="day-subsection">
+          <h3>
+            Day 11: Oct 20, 2026 (Tue) &mdash; Day Excursion: Himeji Samurai
+            Castle OR USJ
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:30 &ndash; 12:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: 30-minute Shinkansen to Himeji Castle ("White
+                    Heron Castle"), pristine samurai castle.
+                  </td>
+                  <td>Himeji, Hyogo</td>
+                  <td>~$35 AUD train + ~$10 AUD entry</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Full day at Universal Studios Japan: Super
+                    Nintendo World &amp; Wizarding World of Harry Potter.
+                  </td>
+                  <td>Konohana, Osaka</td>
+                  <td>~$86 AUD (¥8,600 entry)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:30 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1 (Himeji): Stroll Koko-en Garden's 9 distinct
+                    Edo-period walled gardens with tea house.
+                  </td>
+                  <td>Himeji</td>
+                  <td>~$4 AUD (¥400)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2 (USJ): Mario Kart Koopa's Challenge ride &amp;
+                    Harry Potter Forbidden Journey 4D ride.
+                  </td>
+                  <td>USJ, Osaka</td>
+                  <td>Included in USJ Ticket</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Return to Osaka for Hozenji Yokocho moss-covered
+                    temple alleyway &amp; yakitori dinner.
+                  </td>
+                  <td>Namba, Osaka</td>
+                  <td>~$35 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Craft beer &amp; gyoza crawl in Umeda underground
+                    arcade.
+                  </td>
+                  <td>Umeda, Osaka</td>
+                  <td>~$30 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 12 -->
+        <div class="day-subsection">
+          <h3>
+            Day 12: Oct 21, 2026 (Wed) &mdash; Shinkansen Return to Tokyo &amp;
+            Akihabara
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(09:00 &ndash; 12:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Board Tokaido Shinkansen from Shin-Osaka to Tokyo
+                    Station (2h 30m) with bento lunch.
+                  </td>
+                  <td>Shin-Osaka &rarr; Tokyo</td>
+                  <td>~$145 AUD (¥14,500)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Morning coffee &amp; check in to Shinjuku Prince
+                    Hotel.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>Included in Accomm</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:30 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Browse Mandarake anime collectibles, Radio Kaikan,
+                    and retro games at Super Potato.
+                  </td>
+                  <td>Akihabara, Tokyo</td>
+                  <td>~$20 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Visit historic Kanda Myojin Shrine (patron shrine
+                    of IT &amp; electronics) &amp; tea shop.
+                  </td>
+                  <td>Chiyoda, Tokyo</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Dinner under the giant Godzilla head in Kabukicho
+                    &amp; live jazz at Pit Inn.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$45 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Shinjuku Gyoen National Garden stroll &amp;
+                    Tonkatsu dinner.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$25 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 13 -->
+        <div class="day-subsection">
+          <h3>
+            Day 13: Oct 22, 2026 (Thu) &mdash; Day Excursion to Mt. Fuji /
+            Hakone OR Tokyo Shopping
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(08:00 &ndash; 12:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Odakyu Romancecar to Hakone; ride Hakone Ropeway
+                    over Owakudani volcanic valley.
+                  </td>
+                  <td>Hakone, Kanagawa</td>
+                  <td>~$60 AUD (Free Pass)</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Morning luxury shopping in Tokyo: Ginza Six,
+                    Shibuya Parco, and Daikanyama T-Site.
+                  </td>
+                  <td>Tokyo</td>
+                  <td>Variable</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:30 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1 (Hakone): Cruise Lake Ashi on pirate ship with
+                    views of Mt. Fuji &amp; Hakone Shrine red torii gate.
+                  </td>
+                  <td>Lake Ashi, Hakone</td>
+                  <td>Included in Pass</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2 (Tokyo): Relax at Daikanyama Tsutaya Books,
+                    boutique shopping &amp; specialty coffee.
+                  </td>
+                  <td>Daikanyama, Tokyo</td>
+                  <td>~$15 AUD</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 21:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: High-end Japanese A5 Wagyu Teppanyaki farewell
+                    dinner in Shinjuku/Ginza.
+                  </td>
+                  <td>Tokyo</td>
+                  <td>~$90 AUD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Final night craft cocktail tour in Golden Gai
+                    &amp; Ebisu bar hopping.
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>~$45 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 14 -->
+        <div class="day-subsection">
+          <h3>
+            Day 14: Oct 23, 2026 (Fri) &mdash; Final Souvenirs, Haneda Transfer
+            &amp; Direct Flight Return
+          </h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 22%">Time</th>
+                  <th style="width: 48%">Activity (Options)</th>
+                  <th style="width: 15%">Location</th>
+                  <th style="width: 15%">Budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Morning<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(09:00 &ndash; 12:30)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Morning souvenir shopping at Don Quijote Shinjuku
+                    (Tokyo Banana, KitKats, green tea).
+                  </td>
+                  <td>Shinjuku, Tokyo</td>
+                  <td>Variable</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Quiet morning walk around Hibiya Park &amp; Tokyo
+                    Station Marunouchi red-brick facade.
+                  </td>
+                  <td>Tokyo Station</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Afternoon<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(12:30 &ndash; 17:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Limousine Bus / Haneda Monorail to Haneda Airport
+                    (HND) Terminal 3 &amp; duty-free shopping.
+                  </td>
+                  <td>HND Airport</td>
+                  <td>~$12 AUD transfer</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Relax at Haneda Airport ANA / Qantas lounge before
+                    direct departure.
+                  </td>
+                  <td>HND Terminal 3</td>
+                  <td>Included with ticket</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="time-cell">
+                    Evening<br /><span
+                      style="
+                        font-size: 0.85em;
+                        font-weight: normal;
+                        color: var(--text-secondary);
+                      "
+                      >(17:00 &ndash; 22:00)</span
+                    >
+                  </td>
+                  <td>
+                    Option 1: Board direct evening return flight QF 60 / NH 889
+                    (HND 22:00 &rarr; SYD 09:30 +1 Oct 24).
+                  </td>
+                  <td>In-Flight</td>
+                  <td>Included in Airfare</td>
+                </tr>
+                <tr>
+                  <td>
+                    Option 2: Overnight direct flight sleep &amp; arrival back
+                    in Sydney morning of Oct 24.
+                  </td>
+                  <td>In-Flight</td>
+                  <td>Included in Airfare</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -710,45 +1925,34 @@
       </section>
 
       <section>
-        <h2>5. Interactive Flight Map</h2>
-        <!-- Added a unique ID here -->
-        <div class="map-container" id="flight-map-custom">
-          <iframe
-            src="https://flightmapper.io/maps/bmalanot"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section>
         <h2>6. Cost Breakdown</h2>
 
         <div class="cost-summary">
           <div class="cost-details">
             <table>
               <tr>
-                <td>International &amp; Regional Airfare (2 People)</td>
-                <td style="text-align: right">$5,670.56</td>
+                <td>International Airfare (2 People, Direct Return)</td>
+                <td style="text-align: right">$4,072.72</td>
               </tr>
               <tr>
-                <td>Total Accommodation (18 Nights, 1 Room)</td>
-                <td style="text-align: right">$6,731.76</td>
+                <td>Total Accommodation (13 Nights, 1 Room)</td>
+                <td style="text-align: right">$3,535.00</td>
               </tr>
               <tr>
                 <td>Regional Rail &amp; Local Transit (2 People)</td>
-                <td style="text-align: right">$800.00</td>
+                <td style="text-align: right">$900.00</td>
               </tr>
               <tr>
                 <td>Daily Sustenance &amp; Experience Budget (2 People)</td>
-                <td style="text-align: right">$7,600.00</td>
+                <td style="text-align: right">$3,920.00</td>
               </tr>
             </table>
           </div>
           <div class="total-block">
             <div class="total-label">Projected Total</div>
-            <div class="total-amount">$20,802</div>
+            <div class="total-amount">$12,428</div>
             <div style="font-size: 0.8em; opacity: 0.7">
-              AUD for both travelers
+              AUD for both travelers ($6,214 / person)
             </div>
           </div>
         </div>
@@ -756,22 +1960,23 @@
 
       <div class="reference-list">
         <strong>OFFICIAL RESOURCES:</strong><br />
-        [01] <a href="https://www.qantas.com">Qantas Airways</a> | [02]
-        <a href="https://www.ana.co.jp">All Nippon Airways</a> | [03]
-        <a href="https://www.jal.co.jp">Japan Airlines</a> | [04]
-        <a href="https://www.vietnamairlines.com">Vietnam Airlines</a><br />
-        [05]
-        <a href="https://vietnam.travel"
-          >Vietnam National Administration of Tourism (Climate &amp; Weather
-          Data)</a
+        [01]
+        <a href="https://www.qantas.com">Qantas Airways Direct Schedules</a> |
+        [02] <a href="https://www.ana.co.jp">All Nippon Airways (ANA)</a> | [03]
+        <a href="https://www.jal.co.jp">Japan Airlines (JAL)</a><br />
+        [04]
+        <a href="https://www.japan.travel"
+          >Japan National Tourism Organization (JNTO October Climate Data)</a
         >
-        | [06]
+        | [05]
+        <a href="https://www.japanrailpass.net"
+          >JR Group Tokaido Shinkansen Fares</a
+        ><br />
+        [06]
         <a
           href="https://www.google.com/maps/d/u/0/edit?mid=14uls7QPn8ESDw8Q6V40x5HKWhSHoYiA&amp;usp=sharing"
           >Google Map</a
         >
-        | [07]
-        <a href="https://flightmapper.io/maps/bmalanot">Flight Map</a>
       </div>
     </div>
   </body>
